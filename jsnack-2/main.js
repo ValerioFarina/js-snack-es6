@@ -61,7 +61,7 @@ const isNumber = (value) => !isNaN(value);
 // questa funzione prende in input tre numeri num, min e max, e controlla se num è compreso tra min e max
 // se num è compreso tra min e max (eventualmente uguale a min o max), allora la funzione ritorna true
 // altrimenti ritorna false
-const isInRange = (num, min, max) => num >= min && num <=max;
+const isInRange = (num, min, max) => num>=min && num<=max;
 
 
 // questa funzione serve a controllare se l'input inserito dall'utente è valido
