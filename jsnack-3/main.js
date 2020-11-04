@@ -29,17 +29,15 @@ $(document).ready(function() {
         }
     ];
 
-    // clono l'array books
-    let clonedBooks = books.map(cloneObject);
+    // creo una copia dell'array books
+    // l'unica differenza tra la copia e l'originale è che nella copia i singoli elementi dell'array (cioè, i singoli libri) hanno anche una proprietà position
+    // il valore della proprietà position è una lettera causale dell'alfabeto
+    let clonedBooks = books.map((currentBook) => {
+        return {...currentBook, position : getRndLetter()};
+    });
 
-    // ciclo sull'array clonedBooks
-    // ad ogni iterazione, aggiungo al libro corrente la proprietà "position" e gli assegno come valore una lettera generata casualmente
-    clonedBooks.forEach((currentBook) => currentBook.position = getRndLetter());
-    
     console.log(clonedBooks);
     console.log(books);
-
-
 });
 
 
