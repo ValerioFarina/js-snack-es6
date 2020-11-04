@@ -43,12 +43,6 @@ $(document).ready(function() {
 
 // *************** LE MIE FUNZIONI ***************
 
-// questa funzione prende come parametro un oggetto o un array e restituisce una sua copia
-const cloneObject = (object) => {
-    return {...object};
-};
-
-
 // questa funzione prende in input un min e un max e ritorno un valore casuale compreso tra di essi
 const getRndInteger = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
